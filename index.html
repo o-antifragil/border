@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <link rel="stylesheet" href="/CSS3/07 - border/estilo.css">
+</head>
+
+<body>
+    <div>
+        <h2>Bordas</h2>
+        <h3>O que são e para o que servem as bordas?</h3>
+        <p>
+            As bordas em CSS são usadas para definir uma linha ao redor de elementos, ajudando a separar, destacar ou
+            organizar conteúdos na página. A propriedade básica para bordas é <code>border</code>, que engloba diversos
+            aspectos, como largura, estilo e cor. Com ela, você pode criar bordas sólidas, tracejadas, arredondadas,
+            coloridas e muito mais.
+        </p>
+    </div>
+
+    <div>
+        <h3>Principais Propriedades de <code>border</code></h3>
+        <ol>
+            <li>
+                <code>border-width</code>: Define a espessura da borda, que pode ser especificada em unidades como
+                <code>px</code> ou usando palavras-chave como <code>thin</code>, <code>medium</code>, <code>thick</code>.
+                <pre><code><span class="property">border-width</span>: <span class="value">2px</span><span class="punctuation">;</span></code></pre>
+            </li>
+            <li>
+                <code>border-style</code>: Define o estilo da borda, como <code>solid</code> (sólido),
+                <code>dashed</code> (tracejado), <code>dotted</code> (pontilhado), entre outros.
+                <pre><code><span class="property">border-style</span>: <span class="value">solid</span><span class="punctuation">;</span></code></pre>
+            </li>
+            <li>
+                <code>border-color</code>: Define a cor da borda, podendo ser qualquer cor válida em CSS.
+                <pre><code><span class="property">border-color</span>: <span class="value">#333</span><span class="punctuation">;</span></code></pre>
+            </li>
+        </ol>
+        <p>Essas propriedades podem ser combinadas em uma única linha usando a abreviação <code>border</code>.</p>
+    </div>
+
+    <div>
+        <pre><code><span class="selector">.elemento</span> <span class="punctuation">{</span>
+    <span class="property">border</span>: <span class="value">2px solid #333</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+        </code></pre>
+    </div>
+
+    <div>
+        <h3>Propriedades Individuais para Cada Lado</h3>
+        <p>Você pode aplicar bordas diferentes em cada lado do elemento com propriedades como:</p>
+        <ul>
+            <li><code>border-top</code></li>
+            <li><code>border-right</code></li>
+            <li><code>border-bottom</code></li>
+            <li><code>border-left</code></li>
+        </ul>
+    </div>
+
+    <div>
+        <p>Cada uma pode ter seus próprios valores de largura, estilo e cor.</p>
+        <pre><code><span class="selector">.elemento</span> <span class="punctuation">{</span>
+    <span class="property">border-top</span>: <span class="value">2px solid red</span><span class="punctuation">;</span>
+    <span class="property">border-right</span>: <span class="value">3px dashed blue</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+        </code></pre>
+    </div>
+
+    <div>
+        <h3><code>border-radius</code>: Bordas arredondadas</h3>
+        <p>
+            Para criar bordas arredondadas, usamos <code>border-radius</code>, que permite arredondar os cantos do
+            elemento. Um valor maior de <code>border-radius</code> cria um círculo ou elipse.
+        </p>
+        <pre><code><span class="selector">.elemento</span> <span class="punctuation">{</span>
+    <span class="property">border</span>: <span class="value">2px solid black</span><span class="punctuation">;</span>
+    <span class="property">border-radius</span>: <span class="value">10px</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+        </code></pre>
+    </div>
+
+    <div>
+        <h3>Resumo de Propriedades</h3>
+        <ul>
+            <li><code>border</code>: Define todos os aspectos de uma borda de uma só vez.</li>
+            <li><code>border-width</code>, <code>border-style</code>, <code>border-color</code>: Definem largura, estilo e cor de forma independente.</li>
+            <li><code>border-radius</code>: Arredonda os cantos da borda.</li>
+        </ul>
+        <p>As bordas são muito úteis para adicionar design e estrutura ao layout da página.</p>
+    </div>
+</body>
+
+</html>
